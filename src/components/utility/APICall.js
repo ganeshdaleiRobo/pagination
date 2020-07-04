@@ -1,31 +1,14 @@
-export const APICall = (function () {
-  var publicProperty = "I am a public property";
-  async function fetchHTMLFromWebSit(url) {
-    let response = await axios
-      .get(url)
-      .then((res) => res.data)
-      .catch((err) => console.log(err));
-    const html = response;
-    const $ = cheerio.load(html);
-    return $;
-  } 
-
-  
-  const _featchAPI = (url) => {
-    var result = [];
-    fetch(url)
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        result.push([...data]);
-      })
-      .catch((error) => {});
+export const APICall = async (url) => {
+   let response =  await fetch(url);
+   let result = await response.json();
     return result;
-  };
-
-  return {
-    Call: _featchAPI,
-    publicProperty: publicProperty,
-  };
-})();
+}
+export const _featchAPI = async (url) => {
+  let response;
+  let result;
+  try {
+    response = await fetch(url);
+    result = await response.json();
+  } catch (error) {}
+  return result;
+};
