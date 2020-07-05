@@ -1,0 +1,38 @@
+.button-wrapper{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+
+.button-wrapper--button-white {
+    color: rgb(255, 255, 255);
+  }
+  
+  .button-wrapper--button-gray {
+    color: gray;
+  }
+  
+  .button-wrapper--button-lightgray {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .button-wrapper--buttont-black {
+    color: black;
+  }
+  
+  .button-wrapper--buttont-orange {
+    color: #ff6600;
+  }
+  
+  .button-wrapper--button-small {
+    font-size: 12px;
+  }
+  
+  .button-wrapper--button-small-medium {
+    font-size: 14px;
+  }
+  
+  .button-wrapper--button-medium {
+    font-size: 16px;
+  }
+  

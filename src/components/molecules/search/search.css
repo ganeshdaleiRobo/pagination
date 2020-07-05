@@ -1,0 +1,7 @@
+.search-wapper{
+    display: flex;
+    justify-content: center;
+}
+.search-wapper *{
+    margin-left: 10px;
+}

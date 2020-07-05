@@ -1,10 +1,10 @@
 import * as React from "react";
-import "./Text.css";
+import "./button.css";
 export type textColorType = "white" | "gray" | "lightgray" | "black" | "orange";
 export type textWeightType = "normal" | "bold";
 export type textSizeType = "small" | "small-medium" | "medium";
 
-export interface InputTextProps {
+export interface ButtonProps {
   label: string;
   fontSize?: string;
   color?: textColorType;
@@ -12,25 +12,25 @@ export interface InputTextProps {
   weight?: textWeightType;
   style?: {};
 }
-const Text = ({
+const Button = ({
   label,
-  className,
   fontSize,
   color,
+  className,
   weight,
   style,
-}: InputTextProps) => {
-  var textSize = `text-wrapper--text-${fontSize ? fontSize : "15px"}`;
-  var textColor = `text-wrapper--text-${color ? color : "white"}`;
-  var textWeight = `text-wrapper--text-${weight ? weight : "normal"}`;
+}: ButtonProps) => {
+  let textSize = `button-wrapper--button-${fontSize ? fontSize : "15px"}`;
+  let textColor = `button-wrapper--button-${color ? color : "white"}`;
+  let textWeight = `button-wrapper--button-${weight ? weight : "normal"}`;
   return (
-    <div
+    <button
       style={style}
-      className={`text-wrapper ${textSize} ${textColor} ${textWeight} ${className}`}
+      className={`button-wrapper ${textSize} ${textColor} ${textWeight} ${className}`}
     >
       {label}
-    </div>
+    </button>
   );
 };
 
-export default Text;
+export default Button;

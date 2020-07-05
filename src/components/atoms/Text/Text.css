@@ -21,6 +21,10 @@
   color: black;
 }
 
+.text-wrapper--text-orange {
+  color: #ff6600;
+}
+
 .text-wrapper--text-small {
   font-size: 12px;
 }
