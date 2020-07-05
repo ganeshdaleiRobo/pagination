@@ -4,6 +4,7 @@ import Render from './organisms/Render';
 const Main = ()=>{
     return (
         <div className="main-wapper">
+            <div className="header-section">Jobs</div>
             <div className="main-inner">
                 <Render/>
             </div>

@@ -1,0 +1,34 @@
+.text-wrapper {
+  margin: 0;
+  line-height: 1.4;
+  color: #fff;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+}
+.text-wrapper--text-white {
+  color: rgb(255, 255, 255);
+}
+
+.text-wrapper--text-gray {
+  color: gray;
+}
+
+.text-wrapper--text-lightgray {
+  color: rgba(255, 255, 255, 0.5);
+}
+.text-wrapper--text-black {
+  color: black;
+}
+
+.text-wrapper--text-small {
+  font-size: 12px;
+}
+
+.text-wrapper--text-small-medium {
+  font-size: 14px;
+}
+
+.text-wrapper--text-medium {
+  font-size: 16px;
+}

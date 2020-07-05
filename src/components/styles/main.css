@@ -3,10 +3,21 @@
     height: 100vh;
     background-color: white;
 }
+.header-section{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    background-color:#ff6600;
+    padding: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 .main-inner{
     width: 80%;
     height: auto;
     margin: auto;
-    background-color: #f6f6ef;
+    background-color: #e6e3e3;
     padding: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
