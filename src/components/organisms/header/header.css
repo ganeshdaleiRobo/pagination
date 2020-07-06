@@ -1,0 +1,10 @@
+.header-wraper{
+display: flex;
+}
+.header-wraper div{
+    margin-left: 15px;
+    border-right: solid;
+    border-width: .5px;
+    border-color: #000000;
+    padding-right: 5px;
+}
