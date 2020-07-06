@@ -7,6 +7,7 @@ export const _featchAPI = async (url) => {
   } catch (error) {}
   return result;
 };
+
 export const convertTimeStampToData = (timeStamp)=>{
  var date = new Date(timeStamp);
   return date;
@@ -17,4 +18,3 @@ export const convert = (str)=> {
     day = ("0" + date.getDate()).slice(-2);
   return [date.getFullYear(), mnth, day].join("-");
 }
-

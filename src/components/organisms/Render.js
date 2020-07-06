@@ -42,7 +42,7 @@ const Render = () => {
           <JobCard
             Title={value.title}
             Link={value.by}
-            time={convert(String(convertTimeStampToData(value.time)))}
+            time={String(convertTimeStampToData(value.time))}
           />
         );
       })}
