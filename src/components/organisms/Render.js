@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import JobCard from "../molecules/JobCard";
 import { _featchAPI } from "../utility/APICall";
 import { convertTimeStampToData, convert } from "../utility/APICall";
-import Button from '../atoms/button/Button';
+import Button from "../atoms/button/Button";
 const userArr = [];
 let startIndex = 0;
 let lastIndex = 30;
@@ -17,9 +17,7 @@ const Render = () => {
           ` https://hacker-news.firebaseio.com/v0/item/${data[i]}.json?print=pretty`
         ).then((List) => {
           userArr.push(List);
-          if (userArr.length === data.length) {
-            setUserList(userArr.slice(startIndex, lastIndex));
-          }
+          setUserList(userArr.slice(startIndex, lastIndex));
         });
       }
     });
@@ -39,7 +37,6 @@ const Render = () => {
   };
   return (
     <div>
-     
       {userList.map((value, index, arr) => {
         return (
           <JobCard
@@ -49,7 +46,9 @@ const Render = () => {
           />
         );
       })}
-      <div onClick={pagination}><Button label="more.."color="gray"/></div>
+      <div onClick={pagination}>
+        <Button label="more.." color="gray" />
+      </div>
     </div>
   );
 };
