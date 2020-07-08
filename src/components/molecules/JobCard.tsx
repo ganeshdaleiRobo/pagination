@@ -2,9 +2,9 @@ import * as React from "react";
 import "./jobCard.css";
 import Text from "../atoms/Text/Text";
 export interface JobCard {
-  Title: string;
-  Link: string;
-  time: string;
+  Title:any;
+  Link: any;
+  time: any;
 }
 const JobCard = ({ Title, Link, time }: JobCard) => {
   return (

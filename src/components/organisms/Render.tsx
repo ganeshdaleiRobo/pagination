@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import JobCard from "../molecules/JobCard";
 import { _featchAPI } from "../utility/APICall";
-import { convertTimeStampToData, convert } from "../utility/APICall";
+import { miliSecToTime } from "../utility/APICall";
 import Button from "../atoms/button/Button";
-const userArr = [];
+const userArr:any= [];
 let startIndex = 0;
 let lastIndex = 30;
 const Render = () => {
@@ -37,12 +37,12 @@ const Render = () => {
   };
   return (
     <div>
-      {userList.map((value, index, arr) => {
+      {userList.map((value:any, index, arr) => {
         return (
           <JobCard
             Title={value.title}
             Link={value.by}
-            time={String(convertTimeStampToData(value.time))}
+            time={miliSecToTime(value.time)}
           />
         );
       })}

@@ -1,9 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./organisms/header/Header";
 import "./styles/main.css";
-import Render from "./organisms/Render";
+//import Render from "./organisms/Render";
 import Footer from "./organisms/footer/Footer";
+import Jobs from "./allPages/Jobs";
 const Main = () => {
   return (
     <div className="main-wapper">
@@ -14,7 +15,7 @@ const Main = () => {
         <Router>
           <Switch>
             <Route exact path="/">
-              <Render />
+              <Jobs />
             </Route>
           </Switch>
         </Router>
